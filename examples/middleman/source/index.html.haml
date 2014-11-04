@@ -1,0 +1,22 @@
+.hero-unit
+  .row
+    .small-12.columns
+      %h2
+        Reservá tu mesa gratis en más de 1500 restaurantes
+      .row.collapse.banner-widget
+        .small-10.columns
+          %input{placeholder: "Donde salir a comer?", type: "text"}
+        .small-2.columns
+          %span.postfix.radius{href: "#"}
+            Buscar
+.row
+  .small-12.columns
+    %h2
+      Restaurantes en Palermo
+    %ul.large-block-grid-3.small-block-grid-1
+      %li
+        = partial "shared/restaurant-box"
+      %li
+        = partial "shared/restaurant-box"
+      %li
+        = partial "shared/restaurant-box"

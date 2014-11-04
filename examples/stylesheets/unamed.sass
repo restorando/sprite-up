@@ -1,15 +1,8 @@
+//Import just these partials from Compass
+
 @import "compass/utilities/sprites"
 @import "compass/css3/background-size"
 
-=background-image-retina($file, $type)
-  background-image: image-url($file + "." + $type)
-  +background-size(contain)
-  background-repeat: no-repeat
-
-  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)
-    &
-      background-image: image-url($file + "@2x." + $type)
-      +background-size(contain)
 
 // Now let's define the sprite mixin.
 // This delegates to the reusable retina-sprite mixin.
