@@ -5,7 +5,7 @@
 compass_config do |config|
   # Require any additional compass plugins here.
   config.add_import_path "bower_components/foundation/scss"
-  
+
   # Set this to the root of your project when deployed:
   config.http_path = "/"
   config.css_dir = "stylesheets"
@@ -105,3 +105,5 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+require 'compass'
