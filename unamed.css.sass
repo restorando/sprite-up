@@ -1,0 +1,60 @@
+@import "compass/utilities/sprites"
+@import "compass/css3/background-size"
+
+=background-image-retina($file, $type)
+  background-image: image-url($file + "." + $type)
+  +background-size(contain)
+  background-repeat: no-repeat
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)
+    &
+      background-image: image-url($file + "@2x." + $type)
+      +background-size(contain)
+
+// Now let's define the sprite mixin.
+// This delegates to the reusable retina-sprite mixin.
+// =sprite($name)
+//   +retina-sprite($name, $sprites, $sprites2x, $spritesUrl, $sprites2xUrl)
+
+// The general purpose retina sprite mixin.
+//
+//    @include retina-sprite(name, $spritemap1, $spritemap2)
+//    @include retina-sprite(name, $spritemap1, $spritemap2[, $dimensions: true, $pad: 0])
+//
+//    If `dimensions` is true, then width/height will also be set.
+//
+//    if `pad` is non-zero, then that's how much padding the element will have (requires
+//    $spacing on the sprite maps). Great for iPhone interfaces to make hit areas bigger.
+//
+=retina-sprite($name, $sprites, $sprites2x, $spritesUrl, $sprites2xUrl, $dimensions: true, $pad: 0)
+  @if $dimensions == true
+    +sprite-dimensions($sprites, $name)
+
+  background-image: $spritesUrl
+  background-position: sprite-position($sprites, $name, -$pad, -$pad)
+  background-repeat: no-repeat
+
+  @if $pad > 0
+    padding: $pad
+
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5)
+    &
+      $pos: sprite-position($sprites2x, $name, -$pad*2, -$pad*2)
+      background-image: $sprites2xUrl
+      background-position: nth($pos, 1) nth($pos, 2)/2
+      +background-size(ceil(image-width(sprite-path($sprites2x)) / 2), auto)
+      // ^-- this is the "smarter" way to do this.
+      //     sprite-path() returns the path of the generated sprite sheet, which
+      //     image-width() calculates the width of. the ceil() is in place in case
+      //     you have sprites that have an odd-number of pixels in width (which
+      //     you shouldn't in the first place)
+
+=generate-sprite($images-path, $retina-images-path, $prefix: "icons")
+  $sprites: sprite-map($images-path, $spacing: 20px)
+  $sprites2x: sprite-map($retina-images-path, $spacing: 40px)
+  $spritesUrl: sprite-url($sprites)
+  $sprites2xUrl: sprite-url($sprites2x)
+
+  @each $image in sprite-names($sprites)
+    .#{$prefix}-#{$image}
+      +retina-sprite($image, $sprites, $sprites2x, $spritesUrl, $sprites2xUrl)
