@@ -653,13 +653,6 @@ form {
   text-indent: 3px;
 }
 
-#main-content h3:before {
-  content: "///";
-  color: #9ddcff;
-  padding-right: 0.3em;
-  margin-left: -2em;
-}
-
 #main-content h4 {
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 15px;
