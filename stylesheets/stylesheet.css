@@ -451,20 +451,11 @@ header {
   padding-top: 40px;
   padding-bottom: 40px;
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
-  background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
+  background: #021535;
   border-bottom: solid 1px #275da1;
+  text-align: center
 }
 
-header h1 {
-  letter-spacing: -1px;
-  font-size: 72px;
-  font-weight: normal;
-  color: #fff;
-  line-height: 1;
-  margin-top: 0;
-  margin-bottom: 0.2em;
-  width: 540px;
-}
 
 header h2 {
   font-size: 26px;
