@@ -1,9 +1,12 @@
 .row
-  .small-12.columns
-    %h2
+  .columns
+    %h1
       Sprite Up
-    %ul.large-block-grid-3.small-block-grid-1
-      %li
-        Aca van los iconos
-        %i.icons-cuisine
 
+.row
+  .columns
+    %ul.icons
+      - ["Cuisine", "Bar-drinks"].each do |feature|
+        %li
+          %i{ class: "icons-#{feature.downcase}"}
+          %span= feature
