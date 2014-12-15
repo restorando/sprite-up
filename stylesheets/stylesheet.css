@@ -477,6 +477,7 @@ header h2 {
 #content-wrapper {
   border-top: solid 1px #fff;
   padding-top: 30px;
+  background: #fbf8ea;
 }
 
 #main-content {
