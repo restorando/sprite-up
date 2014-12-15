@@ -426,7 +426,7 @@ th {
   padding: 0;
 }
 
-/* LAYOUT STYLES */
+/* Custom Styles */
 body {
   font-size: 15px;
   line-height: 1.5;
@@ -595,8 +595,8 @@ h1 {
 
 h2 {
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
-  font-size: 22px;
-  font-weight: bold;
+  font-size: 2em;
+  font-weight: normal;
   margin-bottom: 8px;
   color: #474747;
   text-indent: 4px;
@@ -604,7 +604,7 @@ h2 {
 
 h3 {
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
-  font-size: 18px;
+  font-size: 1.3em;
   font-weight: bold;
   margin-top: 24px;
   margin-bottom: 8px;
@@ -677,12 +677,13 @@ footer {
   padding-top: 20px;
   padding-bottom: 30px;
   font-size: 13px;
-  color: #aaa;
+  color: #fbf8ea;
 }
 
 footer a {
   color: #666;
 }
+
 footer a:hover {
   color: #444;
 }
