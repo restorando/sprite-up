@@ -521,17 +521,14 @@ a.button small {
   display: block;
   font-size: 11px;
 }
-header a.button {
-  position: absolute;
-  right: 0;
-  top: 0;
-  background: transparent url(../images/github-button.png) 0 0 no-repeat;
-}
+
+
 aside a.button {
   width: 138px;
   padding-left: 64px;
   display: block;
-  background: transparent url(../images/download-button.png) 0 0 no-repeat;
+  border-radius: 5px;
+  background: #E92152 url() 0 0 no-repeat;
   margin-bottom: 20px;
   font-size: 21px;
 }
