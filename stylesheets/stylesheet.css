@@ -443,6 +443,7 @@ p {
 a {
   color: #2879d0;
 }
+
 a:hover {
   color: #2268b2;
 }
@@ -454,18 +455,6 @@ header {
   background: #021535;
   border-bottom: solid 1px #275da1;
   text-align: center
-}
-
-
-header h2 {
-  font-size: 26px;
-  color: #9ddcff;
-  font-weight: normal;
-  line-height: 1.3;
-  width: 540px;
-  letter-spacing: 0;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .inner {
@@ -492,6 +481,7 @@ header h2 {
 aside#sidebar {
   width: 200px;
   padding-left: 20px;
+  margin-top: 40px;
   min-height: 504px;
   float: right;
   font-size: 12px;
@@ -597,17 +587,14 @@ h2 {
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 2em;
   font-weight: normal;
-  margin-bottom: 8px;
   color: #474747;
   text-indent: 4px;
 }
 
 h3 {
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
-  font-size: 1.3em;
-  font-weight: bold;
-  margin-top: 24px;
-  margin-bottom: 8px;
+  font-size: 1.5em;
+  font-weight: normal;
   color: #474747;
   text-indent: 3px;
 }
@@ -673,7 +660,6 @@ dl dd {
 
 footer {
   background: #82CDC8;
-  margin-top: 40px;
   padding-top: 20px;
   padding-bottom: 30px;
   font-size: 13px;
