@@ -575,31 +575,13 @@ hr {
   border-top: solid 1px #ddd;
 }
 
-table {
-  width: 100%;
-  border: 1px solid #ebebeb;
-}
-
-th {
-  font-weight: 500;
-}
-
-td {
-  border: 1px solid #ebebeb;
-  text-align: center;
-  font-weight: 300;
-}
-
-form {
-  background: #f2f2f2;
-  padding: 20px;
-
-}
-
 
 /* GENERAL ELEMENT TYPE STYLES */
 
-#main-content h1 {
+
+/* Typography */
+
+h1 {
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 2.8em;
   font-weight: normal;
@@ -610,14 +592,8 @@ form {
   text-indent: 6px;
 }
 
-#main-content h1:before {
-  content: "/";
-  color: #9ddcff;
-  padding-right: 0.3em;
-  margin-left: -0.9em;
-}
 
-#main-content h2 {
+h2 {
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 22px;
   font-weight: bold;
@@ -625,14 +601,8 @@ form {
   color: #474747;
   text-indent: 4px;
 }
-#main-content h2:before {
-  content: "//";
-  color: #9ddcff;
-  padding-right: 0.3em;
-  margin-left: -1.5em;
-}
 
-#main-content h3 {
+h3 {
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 18px;
   font-weight: bold;
@@ -642,49 +612,30 @@ form {
   text-indent: 3px;
 }
 
-#main-content h4 {
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
-  font-size: 15px;
+h4 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
   font-weight: bold;
   margin-bottom: 8px;
   color: #474747;
   text-indent: 3px;
 }
 
-h4:before {
-  content: "////";
-  color: #9ddcff;
-  padding-right: 0.3em;
-  margin-left: -2.8em;
-}
-
-#main-content h5 {
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+h5 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 14px;
   margin-bottom: 8px;
   color: #474747;
   text-indent: 3px;
 }
-h5:before {
-  content: "/////";
-  color: #9ddcff;
-  padding-right: 0.3em;
-  margin-left: -3.2em;
-}
 
-#main-content h6 {
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+h6 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: .8em;
   margin-bottom: 8px;
   color: #474747;
   text-indent: 3px;
 }
-h6:before {
-  content: "//////";
-  color: #9ddcff;
-  padding-right: 0.3em;
-  margin-left: -3.7em;
-}
+
 
 p {
   margin-bottom: 20px;
@@ -721,7 +672,7 @@ dl dd {
 }
 
 footer {
-  background: transparent url('../images/hr.png') 0 0 no-repeat;
+  background: #82CDC8;
   margin-top: 40px;
   padding-top: 20px;
   padding-bottom: 30px;
