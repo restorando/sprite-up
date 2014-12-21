@@ -515,15 +515,18 @@ a.button small {
 
 
 aside a.button {
-  border-radius: 5px;
+  border-radius: 6px;
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
   color: #ffffff;
   background: #E92152;
-  padding: 10px 20px 10px 20px;
+  padding: 14px 20px 10px 20px;
   text-decoration: none;
-  display: inline-block;
-  min-width: 150px;
+  display: block;
+  min-width: 160px;
   margin-bottom: 20px;
+  vertical-align: middle;
+  cursor: pointer;
+  line-height: 22px;
 }
 
 aside a.button:hover {
@@ -533,6 +536,7 @@ aside a.button:hover {
 
 aside a img {
   float: left;
+  margin-right: 10px;
 }
 
 code, pre {
