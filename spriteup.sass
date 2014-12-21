@@ -1,30 +1,29 @@
 @import "compass/utilities/sprites"
 @import "compass/css3/background-size"
 
-// Retina sprite generator
+// generate-sprites mixin
 //
-//    +generate-sprite($images-path, $images2x-path[, $prefix: "icons", $dimensions: true, $spacing: 20px])
+//    +generate-sprites($images-path, $images2x-path[, $prefix: "icons", $dimensions: true])
 //
 //    Examples:
-//       +generate-sprite("icons/*.png", "retina-icons/*.png")
-//       +generate-sprite("awesome-icons/*.png", "awesome-retina-icons/*.png", $prefix: "awesome-icons")
+//       +generate-sprites("icons/*.png", "retina-icons/*.png")
+//       +generate-sprites("awesome/icons/*.png", "awesome/retina-icons/*.png", $prefix: "awesome-icons")
 //
 //    IMPORTANT: if images are 16x16, retina images must be 32x32.
 //
-=generate-sprite($images-path, $images2x-path, $prefix: "icons", $dimensions: true, $pad: 0)
-  $sprites: sprite-map($images-path, $spacing: 20px)
-  $sprites-url: sprite-url($sprites)
+=generate-sprites($images-path, $images2x-path, $prefix: "icons", $dimensions: true)
+  $default-spacing: 10px
 
-  $sprites2x: sprite-map($images2x-path, $spacing: 40px)
-  $sprites2x-url: sprite-url($sprites2x)
+  $sprite: sprite-map($images-path, $spacing: $default-spacing)
+  $sprite2x: sprite-map($images2x-path, $spacing: $default-spacing*2)
 
-  @each $image in sprite-names($sprites)
-    .#{$prefix}-#{$image}
-      +retina-sprite($image, $sprites, $sprites-url, $sprites2x, $sprites2x-url, $dimensions, $pad)
+  @each $image-name in sprite-names($sprite)
+    .#{$prefix}-#{$image-name}
+      +retina-sprite($image-name, $sprite, $sprite2x, $dimensions, 0px)
 
-// General purpose sprite mixin:
+// retina-sprite mixin
 //
-//    +retina-sprite($name, $sprites, $sprites-url, $sprites2x, $sprites2x-url, $dimensions, $pad)
+//    +retina-sprite($name, $sprite, $sprite2x[, $dimensions: true, $padding: 0])
 //
 //    If `dimensions` is true, then width/height will also be set.
 //    See http://compass-style.org/reference/compass/utilities/sprites/base/#mixin-sprite-dimensions
@@ -32,23 +31,22 @@
 //    if `pad` is non-zero, then that's how much padding the element will have (requires
 //    $spacing on the sprite maps). Great for iPhone interfaces to make hit areas bigger.
 //
-=retina-sprite($name, $sprites, $sprites-url, $sprites2x, $sprites2x-url, $dimensions: true, $pad: 0)
+=retina-sprite($name, $sprite, $sprite2x, $dimensions: true, $padding: 0)
 
   @if $dimensions == true
-    +sprite-dimensions($sprites, $name)
+    +sprite-dimensions($sprite, $name)
 
-  @if $pad > 0
-    padding: $pad
+  @if $padding > 0
+    padding: $padding
 
-  background-image: $sprites-url
-  background-position: sprite-position($sprites, $name, -$pad, -$pad)
+  background-image: sprite-url($sprite)
+  background-position: sprite-position($sprite, $name, -$padding, -$padding)
   background-repeat: no-repeat
   $media-query: "(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5)"
 
   @media #{$media-query}
     &
-      $pos: sprite-position($sprites2x, $name, -$pad*2, -$pad*2)
-      background-image: $sprites2x-url
+      $pos: sprite-position($sprite2x, $name, -$padding*2, -$padding*2)
+      background-image: sprite-url($sprite2x)
       background-position: nth($pos, 1) nth($pos, 2)/2
-      +background-size(ceil(image-width(sprite-path($sprites2x)) / 2), auto)
-
+      +background-size(ceil(image-width(sprite-path($sprite2x)) / 2), auto)

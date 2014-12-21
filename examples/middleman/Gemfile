@@ -3,4 +3,4 @@ source "http://rubygems.org"
 gem "middleman"
 gem "middleman-livereload"
 
-gem "compass"
+gem "compass", "= 1.0.0"

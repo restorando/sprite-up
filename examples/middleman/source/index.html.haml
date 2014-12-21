@@ -1,12 +1,19 @@
 .row
   .columns
-    %h1
-      Sprite Up
+    %h1 Sprite Up
 
 .row
   .columns
+    %h2 Gastronomy
     %ul.icons
-      - ["Cuisine", "Bar-drinks"].each do |feature|
+      - ["Cuisine", "Bar-drinks"].each do |icon_name|
         %li
-          %i{ class: "icons-#{feature.downcase}"}
-          %span= feature
+          %i{ class: "icons-#{icon_name.downcase}"}
+          %span= icon_name
+
+    %h2 Weather
+    %ul.icons.weather-icons
+      - ["Sun", "Sun-cloud", "Cloud", "Fog-cloud", "Rain", "Storm", "Snow", "Moon"].each do |icon_name|
+        %li
+          %i{ class: "weather-icons-#{icon_name.downcase}"}
+          %span= icon_name

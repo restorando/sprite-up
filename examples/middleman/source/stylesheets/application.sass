@@ -1,6 +1,7 @@
 @import "../../../../spriteup"
 
-+generate-sprite("icons/*.png", "icons-retina/*.png")
++generate-sprites("gastronomy/icons/*.png", "gastronomy/icons-retina/*.png")
++generate-sprites("weather/icons/*.png",    "weather/icons-retina/*.png", $prefix: "weather-icons")
 
 .icons
   li
@@ -10,5 +11,11 @@
     height: 30px
     padding: 0px
     display: inline-block
+    vertical-align: -10px
   span
     padding: 10px
+
+.weather-icons
+  i
+    width: 35px
+    height: 35px
