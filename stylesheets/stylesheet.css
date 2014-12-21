@@ -507,6 +507,7 @@ a.button {
   padding-top: 22px;
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
 }
+
 a.button small {
   display: block;
   font-size: 11px;
@@ -514,13 +515,24 @@ a.button small {
 
 
 aside a.button {
-  width: 138px;
-  padding-left: 64px;
-  display: block;
   border-radius: 5px;
-  background: #E92152 url() 0 0 no-repeat;
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+  color: #ffffff;
+  background: #E92152;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  min-width: 150px;
   margin-bottom: 20px;
-  font-size: 21px;
+}
+
+aside a.button:hover {
+  background: #db1546;
+  text-decoration: none;
+}
+
+aside a img {
+  float: left;
 }
 
 code, pre {
@@ -665,6 +677,11 @@ footer {
   font-size: 13px;
   color: #fbf8ea;
 }
+
+footer h3 {
+  color: #fff;
+}
+
 
 footer a {
   color: #666;
