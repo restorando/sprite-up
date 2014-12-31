@@ -27,11 +27,14 @@ Tested against `compass-0.12.X` and `compass-1.0.1`
 ## Run middleman example
 
   ```bash
-  git clone git@github.com:restorando/sprite-up.git
-  cd examples/middleman
-  bundle
+  $ git clone git@github.com:restorando/sprite-up.git
+  $ cd examples/middleman
+  $ bundle install
   # ...
-  middleman
+  $ bower install
+  # ...
+  $ middleman
+  # ...
   ```
 
 Visit `http://localhost:4567`

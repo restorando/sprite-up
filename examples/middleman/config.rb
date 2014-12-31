@@ -4,7 +4,7 @@
 
 compass_config do |config|
   # Require any additional compass plugins here.
-  config.add_import_path "bower_components/foundation/scss"
+  config.add_import_path "bower_components/"
 
   # Set this to the root of your project when deployed:
   config.http_path = "/"
