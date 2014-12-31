@@ -22,7 +22,7 @@ Sprite Up is a very simple tool to generate sprites for retina and non-retina di
 
 ## Testing
 
-Tested against `compass-0.12.X`, `compass-1.0.1`
+Tested against `compass-0.12.X` and `compass-1.0.1`
 
 ## Run middleman example
 
@@ -35,6 +35,10 @@ Tested against `compass-0.12.X`, `compass-1.0.1`
   ```
 
 Visit `http://localhost:4567`
+
+## Version
+
+0.1.0
 
 ## License
 

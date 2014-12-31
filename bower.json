@@ -1,0 +1,27 @@
+{
+  "name": "sprite-up",
+  "description": "Sprite-up is a very simple tool to generate sprites for retina and non-retina displays",
+  "version": "0.1.0",
+  "main": "sprite_up.sass",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "examples"
+  ],
+  "keywords": [
+    "css",
+    "mixins",
+    "sass",
+    "scss",
+    "sprites"
+  ],
+  "authors": [
+    "Noe (https://github.com/noeliacabane)",
+    "Nico (https://github.com/nicoayala)"
+  ],
+  "homepage": "http://restorando.github.io/sprite-up",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/restorando/sprite-up"
+  }
+}
