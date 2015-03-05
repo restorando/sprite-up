@@ -1,17 +1,17 @@
 @import "compass/utilities/sprites"
 @import "compass/css3/background-size"
 
-// generate-sprites mixin
+// sprite-up mixin
 //
-//    +generate-sprites($images-path, $images2x-path[, $prefix: "icons", $dimensions: true])
+//    +sprite-up($images-path, $images2x-path[, $prefix: "icons", $dimensions: true])
 //
 //    Examples:
-//       +generate-sprites("icons/*.png", "retina-icons/*.png")
-//       +generate-sprites("awesome/icons/*.png", "awesome/retina-icons/*.png", $prefix: "awesome-icons")
+//       +sprite-up("icons/*.png", "retina-icons/*.png")
+//       +sprite-up("awesome/icons/*.png", "awesome/retina-icons/*.png", $prefix: "awesome-icons")
 //
 //    IMPORTANT: if images are 16x16, retina images must be 32x32.
 //
-=generate-sprites($images-path, $images2x-path, $prefix: "icons", $dimensions: true)
+=sprite-up($images-path, $images2x-path, $prefix: "icons", $dimensions: true)
   $default-spacing: 10px
 
   $sprite: sprite-map($images-path, $spacing: $default-spacing)
@@ -20,6 +20,9 @@
   @each $image-name in sprite-names($sprite)
     .#{$prefix}-#{$image-name}
       +retina-sprite($image-name, $sprite, $sprite2x, $dimensions, 0px)
+
+=generate-sprites($images-path, $images2x-path, $prefix: "icons", $dimensions: true)
+  +sprite-up($images-path, $images2x-path, $prefix, $dimensions)
 
 // retina-sprite mixin
 //

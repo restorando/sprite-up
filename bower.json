@@ -1,7 +1,7 @@
 {
   "name": "sprite-up",
   "description": "Sprite-up is a very simple tool to generate sprites for retina and non-retina displays",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "sprite-up.sass",
   "license": "MIT",
   "ignore": [
