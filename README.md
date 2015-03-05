@@ -42,7 +42,8 @@ Sprite Up is a very simple tool to generate sprites for retina and non-retina di
 
   Lets suppose you have your non-retina icons and your retina icons under `app/assets/images/icons` and `app/assets/images/retina-icons` respectively.
 
-    Important: if a non-retina icon is 16x16 then the retina icon must be 32x32. If you don't follow this instruction your icons won't look aligned.
+    Important: take in consideration to divide the measures of retina icons by two for the non-retina ones. That is,
+    if the retina icon is 32x32 then the non-retina icon must be 16x16. If you don't follow this instruction your icons won't look aligned.
 
 2. Include the `sprite-up` mixin in some part of your stylesheets
 
