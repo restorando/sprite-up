@@ -1,7 +1,7 @@
 # Sprite-Up
 
 Take the pain away from spriting! With the fruitiness of this refreshing tropical mixin.
-Sprite Up is a very simple tool to generate sprites for retina and non-retina displays.
+Sprite Up is a very simple tool to generate sprites for both retina and non-retina displays.
 
 
 ## Installation
@@ -30,7 +30,7 @@ Sprite Up is a very simple tool to generate sprites for retina and non-retina di
     bundle install
     ```
 
-2. Import Sprite-Up in your stylesheet:
+2. Import Sprite-Up in your main scss/sass stylesheet:
 
   ```scss
   @import "sprite-up/sprite-up";
@@ -38,20 +38,20 @@ Sprite Up is a very simple tool to generate sprites for retina and non-retina di
 
 ## Build your sprites
 
-1. Organize your retina and non-retina images
+1. Organization is the key! Sprite-up creates the icon's css selector looking for your images in different folders (retina and non-retina). It will create a css selector for each image found respectively, as long as you add it into the right folder.  
 
   Lets suppose you have your non-retina icons and your retina icons under `app/assets/images/icons` and `app/assets/images/retina-icons` respectively.
 
     Important: take in consideration to divide the measures of retina icons by two for the non-retina ones. That is,
     if the retina icon is 32x32 then the non-retina icon must be 16x16. If you don't follow this instruction your icons won't look aligned.
 
-2. Include the `sprite-up` mixin in some part of your stylesheets
+2. Include the `sprite-up` mixin in your stylesheet (i.e _icons.sass partial or _images.sass partial)
 
   ```sass
   +sprite-up("icons/*.png", "retina-icons/*.png")
   ```
 
-  Important: you can generate as many sprites as you need as long as you have your icons in separate directories
+  We all know you’d probably need more than one sprite in your project. Worry not, you can generate as many sprites as you need as long as you have your images folders in separated directories.
 
   ```sass
   +sprite-up("icons/*.png", "retina-icons/*.png")
