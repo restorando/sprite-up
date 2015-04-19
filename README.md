@@ -38,9 +38,9 @@ Sprite Up is a very simple tool to generate sprites for both retina and non-reti
 
 ## Build your sprites
 
-1. Organization is the key! Sprite-up creates the icon's css selector looking for your images in different folders (retina and non-retina). It will create a css selector for each image found respectively, as long as you add it into the right folder.  
+1. Folder rganization is the key! Sprite-up creates the icon's CSS selector looking for your images in different folders (retina and non-retina). It will create a CSS selector for each image found respectively, as long as you've added it into the right folder.  
 
-  Lets suppose you have your non-retina icons and your retina icons under `app/assets/images/icons` and `app/assets/images/retina-icons` respectively.
+  We suggest you name your folders like non-retina and retina icons under `app/assets/images/icons` and `app/assets/images/retina-icons` respectively.
 
     Important: take in consideration to divide the measures of retina icons by two for the non-retina ones. That is,
     if the retina icon is 32x32 then the non-retina icon must be 16x16. If you don't follow this instruction your icons won't look aligned.
@@ -58,7 +58,7 @@ Sprite Up is a very simple tool to generate sprites for both retina and non-reti
   +sprite-up("home-icons/*.png", "home-retina-icons/*.png", "home")
   ```
 
-3. Ready
+3. You are ready to go
 
   Sprite files generated: `/images/icons-<hash>.png` and `/images/retina-icons-<hash>.png`
 
