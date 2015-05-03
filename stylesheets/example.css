@@ -1,0 +1,129 @@
+.weather-icons li {
+  list-style: none;
+}
+
+.weather-icons i {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+}
+
+.weather-icons-cloud {
+  height: 32px;
+  width: 32px;
+  background-image: url("../images/weather/icons-scb1395e685.png");
+  background-position: 0 0;
+  background-repeat: no-repeat; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+    .weather-icons-cloud {
+      background-image: url("../images/weather/icons-retina-sc376afb714.png");
+      background-position: 0 0;
+      -moz-background-size: 32px, auto;
+      -o-background-size: 32px, auto;
+      -webkit-background-size: 32px, auto;
+      background-size: 32px, auto; } }
+
+.weather-icons-fog-cloud {
+  height: 32px;
+  width: 32px;
+  background-image: url("../images/weather/icons-scb1395e685.png");
+  background-position: 0 -42px;
+  background-repeat: no-repeat; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+    .weather-icons-fog-cloud {
+      background-image: url("../images/weather/icons-retina-sc376afb714.png");
+      background-position: 0 -42px;
+      -moz-background-size: 32px, auto;
+      -o-background-size: 32px, auto;
+      -webkit-background-size: 32px, auto;
+      background-size: 32px, auto; } }
+
+.weather-icons-moon {
+  height: 32px;
+  width: 32px;
+  background-image: url("../images/weather/icons-scb1395e685.png");
+  background-position: 0 -84px;
+  background-repeat: no-repeat; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+    .weather-icons-moon {
+      background-image: url("../images/weather/icons-retina-sc376afb714.png");
+      background-position: 0 -84px;
+      -moz-background-size: 32px, auto;
+      -o-background-size: 32px, auto;
+      -webkit-background-size: 32px, auto;
+      background-size: 32px, auto; } }
+
+.weather-icons-rain {
+  height: 32px;
+  width: 32px;
+  background-image: url("../images/weather/icons-scb1395e685.png");
+  background-position: 0 -126px;
+  background-repeat: no-repeat; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+    .weather-icons-rain {
+      background-image: url("../images/weather/icons-retina-sc376afb714.png");
+      background-position: 0 -126px;
+      -moz-background-size: 32px, auto;
+      -o-background-size: 32px, auto;
+      -webkit-background-size: 32px, auto;
+      background-size: 32px, auto; } }
+
+.weather-icons-snow {
+  height: 32px;
+  width: 32px;
+  background-image: url("../images/weather/icons-scb1395e685.png");
+  background-position: 0 -168px;
+  background-repeat: no-repeat; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+    .weather-icons-snow {
+      background-image: url("../images/weather/icons-retina-sc376afb714.png");
+      background-position: 0 -168px;
+      -moz-background-size: 32px, auto;
+      -o-background-size: 32px, auto;
+      -webkit-background-size: 32px, auto;
+      background-size: 32px, auto; } }
+
+.weather-icons-storm {
+  height: 32px;
+  width: 32px;
+  background-image: url("../images/weather/icons-scb1395e685.png");
+  background-position: 0 -210px;
+  background-repeat: no-repeat; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+    .weather-icons-storm {
+      background-image: url("../images/weather/icons-retina-sc376afb714.png");
+      background-position: 0 -210px;
+      -moz-background-size: 32px, auto;
+      -o-background-size: 32px, auto;
+      -webkit-background-size: 32px, auto;
+      background-size: 32px, auto; } }
+
+.weather-icons-sun-cloud {
+  height: 32px;
+  width: 32px;
+  background-image: url("../images/weather/icons-scb1395e685.png");
+  background-position: 0 -252px;
+  background-repeat: no-repeat; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+    .weather-icons-sun-cloud {
+      background-image: url("../images/weather/icons-retina-sc376afb714.png");
+      background-position: 0 -252px;
+      -moz-background-size: 32px, auto;
+      -o-background-size: 32px, auto;
+      -webkit-background-size: 32px, auto;
+      background-size: 32px, auto; } }
+
+.weather-icons-sun {
+  height: 32px;
+  width: 32px;
+  background-image: url("../images/weather/icons-scb1395e685.png");
+  background-position: 0 -294px;
+  background-repeat: no-repeat; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+    .weather-icons-sun {
+      background-image: url("../images/weather/icons-retina-sc376afb714.png");
+      background-position: 0 -294px;
+      -moz-background-size: 32px, auto;
+      -o-background-size: 32px, auto;
+      -webkit-background-size: 32px, auto;
+      background-size: 32px, auto; } }

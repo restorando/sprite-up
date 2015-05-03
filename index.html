@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <link rel="stylesheet" type="text/css" href="stylesheets/example.css" media="screen">
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -35,10 +36,138 @@
           </h3>
 
 
-            <pre><code>$ cd your_repo_root/repo_name
-            $ git fetch origin
-            $ git checkout gh-pages
-            </code></pre>
+          <pre>
+<code>
+  $ cd your_repo_root/repo_name
+  $ git fetch origin
+  $ git checkout gh-pages
+</code>
+          </pre>
+
+          <h2 id="installation">Installation</h2>
+
+          <ol>
+            <li>
+              <p>You have two options:</p>
+              <p>a. Install Sprite-Up using <a href="http://bower.io">Bower</a>:</p>
+
+              <pre class="prettyprint">
+<code class="language-bash hljs ">
+  bower install sprite-up
+</code>
+              </pre>
+
+              <p>b. Or, you can install Sprite-Up using <a href="https://rails-assets.org">Rails Assets</a> (Only for <a href="http://bundler.io">Bundler</a> &gt;= 1.7.0):</p>
+              <p>Add the Rails Assets’ source and Sprite-Up gem to your Gemfile, like this:</p>
+
+              <pre class="prettyprint">
+<code class="language-ruby hljs ">
+  source <span class="hljs-string">'https://rails-assets.org'</span> <span class="hljs-keyword">do</span>
+    gem <span class="hljs-string">'rails-assets-sprite-up'</span>
+  <span class="hljs-keyword">end</span>
+</code>
+              </pre>
+
+              <p>And then run:</p>
+
+              <pre class="prettyprint">
+<code class="language-bash hljs ">
+  bundle install
+</code>
+              </pre>
+            </li>
+            <li>
+              <p>Import Sprite-Up in your main scss/sass stylesheet:</p>
+
+              <pre class="prettyprint">
+<code class="language-scss hljs ">
+  <span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"sprite-up/sprite-up"</span>;</span>
+</code>
+              </pre>
+            </li>
+          </ol>
+
+          <h2 id="build-your-sprites">Build your sprites</h2>
+
+          <ol>
+            <li>
+              <p>
+                Folder rganization is the key! Sprite-up creates the icon’s CSS selector by looking for your images in different folders (retina and non-retina). It will create a CSS selector for each image found respectively, as long as you’ve added it into the right folder.
+              </p>
+
+              <p>
+                We suggest you name your folders like “non-retina” and “retina” under <code>app/assets/images/icons</code> and <code>app/assets/images/retina-icons</code> respectively.
+              </p>
+
+              <p>
+                Important: take in consideration to divide the measures of retina icons by two for the non-retina ones. That is, if the retina icon is 32x32 then the non-retina icon must be 16x16. If you don’t follow this instruction your icons won’t look aligned.
+              </p>
+            </li>
+            <li>
+              <p>Include the <code>sprite-up</code> mixin in your stylesheet (i.e _icons.sass partial or _images.sass partial)</p>
+
+              <pre class="prettyprint">
+<code class="language-sass hljs scss">
+  +<span class="hljs-function">sprite-up(<span class="hljs-string">"icons/*.png"</span>, <span class="hljs-string">"retina-icons/*.png"</span>)</span>
+</code>
+              </pre>
+
+              <p>
+                We all know you’d probably need more than one sprite in your project. Worry not, you can generate as many sprites as you need as long as you have your images folders in separated directories.
+              </p>
+
+              <pre class="prettyprint">
+<code class="language-sass hljs scss">
+  +<span class="hljs-function">sprite-up(<span class="hljs-string">"icons/*.png"</span>, <span class="hljs-string">"retina-icons/*.png"</span>)</span>
+  +<span class="hljs-function">sprite-up(<span class="hljs-string">"home-icons/*.png"</span>, <span class="hljs-string">"home-retina-icons/*.png"</span>, <span class="hljs-string">"home"</span>)</span>
+</code>
+              </pre>
+            </li>
+            <li>
+              <p>You are ready to go</p>
+
+              <p>Sprite files generated: <code>/images/icons-&lt;hash&gt;.png</code> and <code>/images/retina-icons-&lt;hash&gt;.png</code></p>
+            </li>
+          </ol>
+
+          <h3>Example</h3>
+          <div>
+            <h4>Weather icons</h4>
+            <ul class='icons weather-icons'>
+              <li>
+                <i class='weather-icons-sun'></i>
+                <span>Sun</span>
+              </li>
+              <li>
+                <i class='weather-icons-sun-cloud'></i>
+                <span>Sun-cloud</span>
+              </li>
+              <li>
+                <i class='weather-icons-cloud'></i>
+                <span>Cloud</span>
+              </li>
+              <li>
+                <i class='weather-icons-fog-cloud'></i>
+                <span>Fog-cloud</span>
+              </li>
+              <li>
+                <i class='weather-icons-rain'></i>
+                <span>Rain</span>
+              </li>
+              <li>
+                <i class='weather-icons-storm'></i>
+                <span>Storm</span>
+              </li>
+              <li>
+                <i class='weather-icons-snow'></i>
+                <span>Snow</span>
+              </li>
+              <li>
+                <i class='weather-icons-moon'></i>
+                <span>Moon</span>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <aside id="sidebar">
@@ -59,9 +188,9 @@
     <footer>
       <div class="inner clearfix">
         Made with <span>&hearts;</span> by
-          <a href="https://github.com/nicoayala">Nico Ayala</a>
-            &
           <a href="https://github.com/noeliacabane">Noelia Cabane</a>
+            &
+          <a href="https://github.com/nicoayala">Nico Ayala</a>
       </div>
     </footer>
   </body>
