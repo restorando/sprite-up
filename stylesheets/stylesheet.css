@@ -473,7 +473,6 @@ header {
 aside#sidebar {
   width: 200px;
   padding-left: 20px;
-  margin-top: 40px;
   min-height: 504px;
   float: right;
   font-size: 12px;
@@ -669,6 +668,7 @@ dl dd {
 }
 
 footer {
+  margin-top: 80px;
   background: #82CDC8;
   padding-top: 30px;
   padding-bottom: 40px;
@@ -788,8 +788,6 @@ footer a:hover {
   }
   aside#sidebar {
     background-image: none;
-    margin-top: 20px;
-    border-top: solid 1px #ddd;
     padding: 20px 0;
     min-height: 0;
   }
