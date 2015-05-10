@@ -132,15 +132,6 @@ dfn {
  * contexts in Firefox 4+, Safari, and Chrome.
  */
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/**
- * Address styling not present in IE 8/9.
- */
-
 mark {
   background: #ff0;
   color: #000;
@@ -428,7 +419,7 @@ th {
 
 /* Custom Styles */
 body {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.5;
   background: #fafafa url(../images/body-bg.jpg) 0 0 repeat;
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
@@ -437,6 +428,7 @@ body {
 }
 
 p {
+  font-size: 16px
   margin-top: 0;
 }
 
@@ -589,8 +581,8 @@ hr {
 
 h1 {
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
-  font-size: 2.8em;
-  font-weight: normal;
+  font-size: 2.4em;
+  font-weight: 300;
   letter-spacing: -1px;
   margin-top: 0;
   margin-bottom: 0;
@@ -601,8 +593,8 @@ h1 {
 
 h2 {
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
-  font-size: 2em;
-  font-weight: normal;
+  font-size: 1.5em;
+  font-weight: 300;
   color: #474747;
   text-indent: 4px;
   line-height: 1;
