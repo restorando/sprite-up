@@ -45,41 +45,39 @@
           <p>
             Sprite-up uses Compass and Sass. By simply adding the retina and non-retina icons to different folders sprite up will create the sprite and a HTML selector so you can add in into your files and forget about the CSS, the background-position and everything else.
           </p>
+          <hr>
 
-          <h2 id="installation">Installation</h2>
+          <h1 id="installation">Installation</h1>
+          <h2>Option 1 </h2>
+          <p>Install Sprite-Up using <a href="http://bower.io">Bower</a></p>
 
-          <ol>
-            <li>
-              <p>You have two options:</p>
-              <p>a. Install Sprite-Up using <a href="http://bower.io">Bower</a>:</p>
-
-              <pre class="prettyprint">
-<code class="language-bash hljs ">
+          <pre class="prettyprint">
+  <code class="language-bash hljs ">
   bower install sprite-up
-</code>
-              </pre>
+  </code>
+          </pre>
+          <h2>Option 2</h2>
 
-              <p>b. Or, you can install Sprite-Up using <a href="https://rails-assets.org">Rails Assets</a> (Only for <a href="http://bundler.io">Bundler</a> &gt;= 1.7.0):</p>
-              <p>Add the Rails Assets’ source and Sprite-Up gem to your Gemfile, like this:</p>
+          <p>Or, you can install Sprite-Up using <a href="https://rails-assets.org">Rails Assets</a> (Only for <a href="http://bundler.io">Bundler</a> &gt;= 1.7.0):</p>
+          <p>Add the Rails Assets source and Sprite-Up gem to your Gemfile, like this:</p>
 
-              <pre class="prettyprint">
+          <pre class="prettyprint">
 <code class="language-ruby hljs ">
-  source <span class="hljs-string">'https://rails-assets.org'</span> <span class="hljs-keyword">do</span>
-    gem <span class="hljs-string">'rails-assets-sprite-up'</span>
-  <span class="hljs-keyword">end</span>
+source <span class="hljs-string">'https://rails-assets.org'</span> <span class="hljs-keyword">do</span>
+gem <span class="hljs-string">'rails-assets-sprite-up'</span>
+<span class="hljs-keyword">end</span>
 </code>
-              </pre>
+          </pre>
 
-              <p>And then run:</p>
+          <p>And then run:</p>
 
-              <pre class="prettyprint">
+          <pre class="prettyprint">
 <code class="language-bash hljs ">
-  bundle install
+bundle install
 </code>
-              </pre>
-            </li>
-            <li>
-              <p>Import Sprite-Up in your main scss/sass stylesheet:</p>
+          </pre>
+
+          <p>Import Sprite-Up in your main scss/sass stylesheet:</p>
 
               <pre class="prettyprint">
 <code class="language-scss hljs ">
@@ -129,8 +127,7 @@
               <p>You are ready to go</p>
 
               <p>Sprite files generated: <code>/images/icons-&lt;hash&gt;.png</code> and <code>/images/retina-icons-&lt;hash&gt;.png</code></p>
-            </li>
-          </ol>
+
 
           <h3>Example</h3>
           <div>
