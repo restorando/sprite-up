@@ -1,194 +1,194 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-    <link rel="stylesheet" type="text/css" href="stylesheets/example.css" media="screen">
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+  <link rel="stylesheet" type="text/css" href="stylesheets/example.css" media="screen">
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  <!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 
-    <title>Sprite-up</title>
-  </head>
+  <title>Sprite-up</title>
+</head>
 
-  <body>
-    <header>
-      <div class="inner">
-        <h1><a href="#"><img src="images/logo.png"></a></h1>
-      </div>
-    </header>
+<body>
+  <header>
+    <div class="inner">
+      <h1><a href="#"><img src="images/logo.png"></a></h1>
+    </div>
+  </header>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h1>
-            Take The Pain Away From Spriting!
-          </h1>
-          <h2>
-            What is it for?
-          </h2>
-          <p>
-            Sprite-up is perfect for lazy designers and front end developers.
-          </p>
-          <p>
-            Today’s websites requiere more sophisticated multi-platform designs that have to look great in different resolutions. If you are trying to build a mobile-first website you have to consider CSS performance, screens resolutions and have retina ready icons. Everybody knows that hand made sprites take a while to create and to maintain, specially if you want to add or remove images to the sprite. And if you need retina-ready sprites the job takes twice of the time.
-            We had this problem while building a mobile-web app so we came up with sprite-up.
-           </p>
+  <div id="content-wrapper">
+    <div class="inner clearfix">
+      <section id="main-content">
+        <h1>
+          Take The Pain Away From Spriting!
+        </h1>
+        <h2>
+          What is it for?
+        </h2>
+        <p>
+          Sprite-up is perfect for lazy designers and front end developers.
+        </p>
+        <p>
+          Today’s websites requiere more sophisticated multi-platform designs that have to look great in different resolutions. If you are trying to build a mobile-first website you have to consider CSS performance, screens resolutions and have retina ready icons. Everybody knows that hand made sprites take a while to create and to maintain, specially if you want to add or remove images to the sprite. And if you need retina-ready sprites the job takes twice of the time.
+          We had this problem while building a mobile-web app so we came up with sprite-up.
+         </p>
 
-          <h2>
-            How does it work?
-          </h2>
-          <p>
-            Sprite-up uses <a href="http://compass-style.org/">Compass</a> and <a href="http://sass-lang.com/">Sass</a>. By simply adding the retina and non-retina icons to different folders sprite up will create the sprite and a HTML selector so you can add in into your files and forget about the CSS, the background-position and everything else.
-          </p>
-          <hr>
+        <h2>
+          How does it work?
+        </h2>
+        <p>
+          Sprite-up uses <a href="http://compass-style.org/">Compass</a> and <a href="http://sass-lang.com/">Sass</a>. By simply adding the retina and non-retina icons to different folders sprite up will create the sprite and a HTML selector so you can add in into your files and forget about the CSS, the background-position and everything else.
+        </p>
+        <hr>
 
-          <h1 id="installation">Installation</h1>
-          <h2>Option 1 </h2>
-          <p>Install Sprite-Up using <a href="http://bower.io">Bower</a></p>
+        <h1 id="installation">Installation</h1>
+        <h2>Option 1 </h2>
+        <p>Install Sprite-Up using <a href="http://bower.io">Bower</a></p>
 
-          <pre class="prettyprint">
-  <code class="language-bash hljs ">
-  bower install sprite-up
-  </code>
-          </pre>
-          <h2>Option 2</h2>
+        <pre class="prettyprint">
+<code class="language-bash hljs ">
+bower install sprite-up
+</code>
+        </pre>
+        <h2>Option 2</h2>
 
-          <p>Or, you can install Sprite-Up using <a href="https://rails-assets.org">Rails Assets</a> (Only for <a href="http://bundler.io">Bundler</a> &gt;= 1.7.0):</p>
-          <p>Add the Rails Assets source and Sprite-Up gem to your Gemfile, like this:</p>
+        <p>Or, you can install Sprite-Up using <a href="https://rails-assets.org">Rails Assets</a> (Only for <a href="http://bundler.io">Bundler</a> &gt;= 1.7.0):</p>
+        <p>Add the Rails Assets source and Sprite-Up gem to your Gemfile, like this:</p>
 
-          <pre class="prettyprint">
+        <pre class="prettyprint">
 <code class="language-ruby hljs ">
 source <span class="hljs-string">'https://rails-assets.org'</span> <span class="hljs-keyword">do</span>
 gem <span class="hljs-string">'rails-assets-sprite-up'</span>
 <span class="hljs-keyword">end</span>
 </code>
-          </pre>
+        </pre>
 
-          <p>And then run:</p>
+        <p>And then run:</p>
 
-          <pre class="prettyprint">
+        <pre class="prettyprint">
 <code class="language-bash hljs ">
 bundle install
 </code>
-          </pre>
+        </pre>
 
-          <p>Import Sprite-Up in your main scss/sass stylesheet:</p>
+        <p>Import Sprite-Up in your main scss/sass stylesheet:</p>
 
-          <pre class="prettyprint">
+        <pre class="prettyprint">
 <code class="language-scss hljs ">
 <span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"sprite-up/sprite-up"</span>;</span>
 </code>
-          </pre>
+        </pre>
+        <hr>
+        <h1>Spriting</h1>
+        <h2 id="build-your-sprites">Build your sprites</h2>
+        <p>
+          Folder rganization is the key! Sprite-up creates the icon’s CSS selector by looking for your images in different folders (retina and non-retina). It will create a CSS selector for each image found respectively, as long as you’ve added it into the right folder.
+        </p>
 
-          <hr>
-          <h1>Spriting</h1>
-          <h2 id="build-your-sprites">Build your sprites</h2>
-          <p>
-            Folder rganization is the key! Sprite-up creates the icon’s CSS selector by looking for your images in different folders (retina and non-retina). It will create a CSS selector for each image found respectively, as long as you’ve added it into the right folder.
-          </p>
+        <p>
+          We suggest you name your folders like <em>non-retina</em> and <em>retina</em> under <code>app/assets/images/icons</code> and <code>app/assets/images/retina-icons</code> respectively.
+        </p>
 
-          <p>
-            We suggest you name your folders like <em>non-retina</em> and <em>retina</em> under <code>app/assets/images/icons</code> and <code>app/assets/images/retina-icons</code> respectively.
-          </p>
+        <p>
+          <strong>Important:</strong> take in consideration to divide the measures of retina icons by two for the non-retina ones. That is, if the retina icon is 32x32 then the non-retina icon must be 16x16. If you don’t follow this instruction your icons won’t look aligned.
+        </p>
 
-          <p>
-            <strong>Important:</strong> take in consideration to divide the measures of retina icons by two for the non-retina ones. That is, if the retina icon is 32x32 then the non-retina icon must be 16x16. If you don’t follow this instruction your icons won’t look aligned.
-          </p>
+        <p>Include the <code>sprite-up</code> mixin in your stylesheet (i.e _icons.sass partial or _images.sass partial)</p>
 
-          <p>Include the <code>sprite-up</code> mixin in your stylesheet (i.e _icons.sass partial or _images.sass partial)</p>
-
-          <pre class="prettyprint">
+        <pre class="prettyprint">
 <code class="language-sass hljs scss">
 +<span class="hljs-function">sprite-up(<span class="hljs-string">"icons/*.png"</span>, <span class="hljs-string">"retina-icons/*.png"</span>)</span>
 </code>
-          </pre>
+        </pre>
 
-          <p>
-            We all know you’d probably need more than one sprite in your project. Worry not, you can generate as many sprites as you need as long as you have your images folders in separated directories.
-          </p>
+        <p>
+          We all know you’d probably need more than one sprite in your project. Worry not, you can generate as many sprites as you need as long as you have your images folders in separated directories.
+        </p>
 
-          <pre class="prettyprint">
+        <pre class="prettyprint">
 <code class="language-sass hljs scss">
 +<span class="hljs-function">sprite-up(<span class="hljs-string">"icons/*.png"</span>, <span class="hljs-string">"retina-icons/*.png"</span>)</span>
 +<span class="hljs-function">sprite-up(<span class="hljs-string">"home-icons/*.png"</span>, <span class="hljs-string">"home-retina-icons/*.png"</span>, <span class="hljs-string">"home"</span>)</span>
 </code>
-          </pre>
+        </pre>
 
-              <p>You are ready to go</p>
+        <p>You are ready to go</p>
 
-              <p>Sprite files generated: <code>/images/icons-&lt;hash&gt;.png</code> and <code>/images/retina-icons-&lt;hash&gt;.png</code></p>
+        <p>Sprite files generated: <code>/images/icons-&lt;hash&gt;.png</code> and <code>/images/retina-icons-&lt;hash&gt;.png</code></p>
+
+        <hr>
+        <h1>Need To See It?</h1>
+        <h2>Example Weather icons</h2>
 
 
-          <h3>Example</h3>
-          <div>
-            <h4>Weather icons</h4>
-            <ul class='icons weather-icons'>
-              <li>
-                <i class='weather-icons-sun'></i>
-                <span>Sun</span>
-              </li>
-              <li>
-                <i class='weather-icons-sun-cloud'></i>
-                <span>Sun-cloud</span>
-              </li>
-              <li>
-                <i class='weather-icons-cloud'></i>
-                <span>Cloud</span>
-              </li>
-              <li>
-                <i class='weather-icons-fog-cloud'></i>
-                <span>Fog-cloud</span>
-              </li>
-              <li>
-                <i class='weather-icons-rain'></i>
-                <span>Rain</span>
-              </li>
-              <li>
-                <i class='weather-icons-storm'></i>
-                <span>Storm</span>
-              </li>
-              <li>
-                <i class='weather-icons-snow'></i>
-                <span>Snow</span>
-              </li>
-              <li>
-                <i class='weather-icons-moon'></i>
-                <span>Moon</span>
-              </li>
-            </ul>
-          </div>
-        </section>
+        <ul class='icons weather-icons'>
+          <li>
+            <i class='weather-icons-sun'></i>
+            <span>Sun</span>
+          </li>
+          <li>
+            <i class='weather-icons-sun-cloud'></i>
+            <span>Sun-cloud</span>
+          </li>
+          <li>
+            <i class='weather-icons-cloud'></i>
+            <span>Cloud</span>
+          </li>
+          <li>
+            <i class='weather-icons-fog-cloud'></i>
+            <span>Fog-cloud</span>
+          </li>
+          <li>
+            <i class='weather-icons-rain'></i>
+            <span>Rain</span>
+          </li>
+          <li>
+            <i class='weather-icons-storm'></i>
+            <span>Storm</span>
+          </li>
+          <li>
+            <i class='weather-icons-snow'></i>
+            <span>Snow</span>
+          </li>
+          <li>
+            <i class='weather-icons-moon'></i>
+            <span>Moon</span>
+          </li>
+        </ul>
+      </section>
 
-        <aside id="sidebar">
-          <a href="https://github.com/restorando/sprite-up/tarball/master" class="button">
-            <img src="images/download.svg" alt="">
-            <small>Download</small>
-            .tar.gz file
-          <a href="https://github.com/restorando/sprite-up" class="button">
-            <img src="images/github.svg" alt="">
-            <small>View project on</small>
-              GitHub
-            </a>
+
+      <aside id="sidebar">
+        <a href="https://github.com/restorando/sprite-up/tarball/master" class="button">
+          <img src="images/download.svg" alt="">
+          <small>Download</small>
+          .tar.gz file
+        <a href="https://github.com/restorando/sprite-up" class="button">
+          <img src="images/github.svg" alt="">
+          <small>View project on</small>
+            GitHub
           </a>
-
-        </aside>
-      </div>
+        </a>
+      </aside>
     </div>
-    <footer>
-      <div class="inner clearfix">
-        Made with <span>&hearts;</span> by
-          <a href="https://github.com/noeliacabane">Noelia Cabane</a>
-            &
-          <a href="https://github.com/nicoayala">Nico Ayala</a>
-      </div>
-    </footer>
-  </body>
+
+
+  <footer>
+    <div class="inner clearfix">
+      Made with <span>&hearts;</span> by
+        <a href="https://github.com/noeliacabane">Noelia Cabane</a>
+          &
+        <a href="https://github.com/nicoayala">Nico Ayala</a>
+    </div>
+  </footer>
+</body>
 </html>
