@@ -530,7 +530,6 @@ aside a img {
   margin-right: 10px;
 }
 
-
 code, pre {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: #222;
@@ -794,6 +793,24 @@ footer a:hover {
     padding-right: 0;
     margin-left: 0;
   }
+}
+
+.weather-icons li {
+  display: inline-block;
+  width: 100%;
+  margin: 10px 0;
+}
+.weather-icons {
+  padding-left: 0;
+}
+.weather-icons i {
+  float: left;
+  margin-right: 10px;
+}
+.weather-icons .icon-text{
+  float: left;
+  font-size: 18px;
+  line-height: 1.8;
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
