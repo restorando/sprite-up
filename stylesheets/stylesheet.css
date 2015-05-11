@@ -576,7 +576,6 @@ h1 {
   margin-top: 0;
   margin-bottom: 0;
   color: #474747;
-  text-indent: 6px;
 }
 
 
@@ -585,7 +584,6 @@ h2 {
   font-size: 1.5em;
   font-weight: 300;
   color: #474747;
-  text-indent: 4px;
   line-height: 1;
 }
 
@@ -594,7 +592,6 @@ h3 {
   font-size: 1.5em;
   font-weight: normal;
   color: #474747;
-  text-indent: 3px;
   line-height: 1;
 }
 
@@ -603,7 +600,6 @@ h4 {
   font-weight: bold;
   margin-bottom: 8px;
   color: #474747;
-  text-indent: 3px;
 }
 
 h5 {
@@ -611,7 +607,6 @@ h5 {
   font-size: 14px;
   margin-bottom: 8px;
   color: #474747;
-  text-indent: 3px;
 }
 
 h6 {
@@ -619,7 +614,6 @@ h6 {
   font-size: .8em;
   margin-bottom: 8px;
   color: #474747;
-  text-indent: 3px;
 }
 
 
