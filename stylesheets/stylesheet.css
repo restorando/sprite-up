@@ -543,7 +543,8 @@ code {
 }
 
 pre code {
-  border: none;
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
 }
 
 ul, ol, dl {
