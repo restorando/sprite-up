@@ -11,6 +11,10 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
   <link rel="stylesheet" type="text/css" href="stylesheets/example.css" media="screen">
 
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/default.min.css">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
   <!--[if lt IE 9]>
   <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -55,9 +59,9 @@
         <p>Install Sprite-Up using <a href="http://bower.io">Bower</a></p>
 
         <pre class="prettyprint">
-<code class="language-bash hljs ">
-bower install sprite-up
-</code>
+          <code class="language-bash hljs ">
+          bower install sprite-up
+          </code>
         </pre>
         <h2>Option 2</h2>
 
@@ -65,27 +69,27 @@ bower install sprite-up
         <p>Add the Rails Assets source and Sprite-Up gem to your Gemfile, like this:</p>
 
         <pre class="prettyprint">
-<code class="language-ruby hljs ">
-source <span class="hljs-string">'https://rails-assets.org'</span> <span class="hljs-keyword">do</span>
-gem <span class="hljs-string">'rails-assets-sprite-up'</span>
-<span class="hljs-keyword">end</span>
-</code>
+          <code class="language-ruby hljs ">
+          source <span class="hljs-string">'https://rails-assets.org'</span> <span class="hljs-keyword">do</span>
+            gem <span class="hljs-string">'rails-assets-sprite-up'</span>
+          <span class="hljs-keyword">end</span>
+          </code>
         </pre>
 
         <p>And then run:</p>
 
         <pre class="prettyprint">
-<code class="language-bash hljs ">
-bundle install
-</code>
+          <code class="language-bash hljs ">
+          bundle install
+          </code>
         </pre>
 
         <p>Import Sprite-Up in your main scss/sass stylesheet:</p>
 
         <pre class="prettyprint">
-<code class="language-scss hljs ">
-<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"sprite-up/sprite-up"</span>;</span>
-</code>
+          <code class="scss">
+          <span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"sprite-up/sprite-up"</span>;</span>
+          </code>
         </pre>
         <hr>
         <h1>Spriting</h1>
@@ -104,10 +108,10 @@ bundle install
 
         <p>Include the <code>sprite-up</code> mixin in your stylesheet (i.e _icons.sass partial or _images.sass partial)</p>
 
-        <pre class="prettyprint">
-<code class="language-sass hljs scss">
-+<span class="hljs-function">sprite-up(<span class="hljs-string">"icons/*.png"</span>, <span class="hljs-string">"retina-icons/*.png"</span>)</span>
-</code>
+        <pre class="brush: sass">
+          <code class="language-sass hljs scss">
+          +<span class="hljs-function">sprite-up(<span class="hljs-string">"icons/*.png"</span>, <span class="hljs-string">"retina-icons/*.png"</span>)</span>
+          </code>
         </pre>
 
         <p>
@@ -115,10 +119,10 @@ bundle install
         </p>
 
         <pre class="prettyprint">
-<code class="language-sass hljs scss">
-+<span class="hljs-function">sprite-up(<span class="hljs-string">"icons/*.png"</span>, <span class="hljs-string">"retina-icons/*.png"</span>)</span>
-+<span class="hljs-function">sprite-up(<span class="hljs-string">"home-icons/*.png"</span>, <span class="hljs-string">"home-retina-icons/*.png"</span>, <span class="hljs-string">"home"</span>)</span>
-</code>
+          <code class="language-sass hljs scss">
+          +<span class="hljs-function">sprite-up(<span class="hljs-string">"icons/*.png"</span>, <span class="hljs-string">"retina-icons/*.png"</span>)</span>
+          +<span class="hljs-function">sprite-up(<span class="hljs-string">"home-icons/*.png"</span>, <span class="hljs-string">"home-retina-icons/*.png"</span>, <span class="hljs-string">"home"</span>)</span>
+          </code>
         </pre>
 
         <p>You are ready to go</p>
@@ -130,6 +134,44 @@ bundle install
         <h2>Example Weather icons</h2>
         <p>Here we have our example. Each selector has the prefix needed</p>
 
+        <pre>
+          <code class="language-sass">
+            &lt;ul class='icons weather-icons'&gt;
+              &lt;li&gt;
+                &lt;i class='weather-icons-sun'&gt;&lt;/i&gt;
+                Sun
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;i class='weather-icons-sun-cloud'&gt;&lt;/i&gt;
+                Sun-cloud
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;i class='weather-icons-cloud'&gt;&lt;/i&gt;
+                Cloud
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;i class='weather-icons-fog-cloud'&gt;&lt;/i&gt;
+                Fog-cloud
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;i class='weather-icons-rain'&gt;&lt;/i&gt;
+                Rain
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;i class='weather-icons-storm'&gt;&lt;/i&gt;
+                Storm
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;i class='weather-icons-snow'&gt;&lt;/i&gt;
+                Snow
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;i class='weather-icons-moon'&gt;&lt;/i&gt;
+                Moon
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          </code>
+        </pre>
 
         <ul class='icons weather-icons'>
           <li>
