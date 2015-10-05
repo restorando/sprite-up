@@ -67,12 +67,12 @@ Sprite Up is a very simple tool to generate sprites for both retina and non-reti
   ```css
   /* ... */
 
-  .icons-beatiful-icon {
+  .icons-beautiful-icon {
     background-image: url("/images/icons-s6702f5f04e.png");
     /* ... */
   }
   @media /* big media query */ {
-    .icons-beatiful-icon {
+    .icons-beautiful-icon {
       background-image: url("/images/retina-icons-se1e882e708.png");
       /* ... */
     }
